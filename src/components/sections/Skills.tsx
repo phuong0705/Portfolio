@@ -22,8 +22,8 @@ export function Skills() {
   };
 
   return (
-    <section id="skills" className="py-24 relative overflow-hidden bg-neutral-950">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+    <section id="skills" className="py-24 relative overflow-hidden bg-white/50">
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/5 to-transparent" />
       
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
         <SectionHeading 
@@ -40,8 +40,8 @@ export function Skills() {
         >
           {categories.map((category, index) => (
             <AnimatedCard key={category} delay={index * 0.1} className="h-full">
-              <h3 className="text-xl font-bold mb-6 text-white flex items-center gap-3">
-                <span className="w-8 h-8 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center text-sm">
+              <h3 className="text-xl font-bold mb-6 text-neutral-900 flex items-center gap-3">
+                <span className="w-8 h-8 rounded-lg bg-orange-500/10 text-orange-500 flex items-center justify-center text-sm">
                   {index + 1}
                 </span>
                 {category}
@@ -52,8 +52,8 @@ export function Skills() {
                   <motion.span
                     key={skill}
                     variants={itemVariants}
-                    whileHover={{ scale: 1.05, backgroundColor: "rgba(249, 115, 22, 0.15)" }}
-                    className="px-3 py-1.5 text-sm font-medium rounded-full bg-white/5 border border-white/10 text-gray-300 hover:text-orange-400 transition-colors cursor-default"
+                    whileHover={{ scale: 1.05, backgroundColor: "rgba(249, 115, 22, 0.1)" }}
+                    className="px-3 py-1.5 text-sm font-medium rounded-full bg-black/5 border border-black/5 text-neutral-600 hover:text-orange-600 transition-colors cursor-default"
                   >
                     {skill}
                   </motion.span>
@@ -67,7 +67,7 @@ export function Skills() {
         <div className="mt-24 relative flex overflow-x-hidden group mask-image-fade">
           <div className="py-8 animate-marquee whitespace-nowrap flex items-center gap-12 group-hover:pause">
             {[...PORTFOLIO_DATA.skills.Frontend, ...PORTFOLIO_DATA.skills.Backend, ...PORTFOLIO_DATA.skills.Frontend, ...PORTFOLIO_DATA.skills.Backend].map((skill, i) => (
-              <span key={i} className="text-3xl font-bold text-white/5 uppercase tracking-widest px-4">
+              <span key={i} className="text-3xl font-bold text-black/5 uppercase tracking-widest px-4">
                 {skill}
               </span>
             ))}

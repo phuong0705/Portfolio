@@ -31,14 +31,14 @@ export function About() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <div className="prose prose-invert max-w-none">
-              <h3 className="text-2xl font-semibold mb-4 text-white">
+            <div className="prose max-w-none">
+              <h3 className="text-2xl font-semibold mb-4 text-neutral-900">
                 Hello, I'm {PORTFOLIO_DATA.name.split(" ")[0]}, a passionate developer based in Vietnam.
               </h3>
-              <p className="text-secondary leading-relaxed text-lg mb-4">
+              <p className="text-neutral-600 leading-relaxed text-lg mb-4">
                 {PORTFOLIO_DATA.shortIntro}
               </p>
-              <p className="text-secondary leading-relaxed text-lg">
+              <p className="text-neutral-600 leading-relaxed text-lg">
                 I believe in writing clean, maintainable code and thoughtfully architecting systems.
                 Whether it's building a complex multi-vendor e-commerce platform or a habit-tracking mobile app,
                 I strive to create impactful user experiences through modern technology.
@@ -47,13 +47,13 @@ export function About() {
 
             <div className="pt-6 grid grid-cols-2 gap-4">
               {STATS.map((stat, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 glass-card border border-white/5 bg-white/[0.02]">
-                  <div className="p-3 rounded-xl bg-orange-500/10 text-orange-400">
+                <div key={i} className="flex items-center gap-3 p-4 glass-card border border-black/5 bg-white/50 shadow-sm hover:bg-white/80 transition-colors">
+                  <div className="p-3 rounded-xl bg-orange-500/10 text-orange-500">
                     <stat.icon size={24} strokeWidth={1.5} />
                   </div>
                   <div>
-                    <div className="text-lg font-bold text-white leading-tight">{stat.label}</div>
-                    <div className="text-sm text-secondary">{stat.value}</div>
+                    <div className="text-lg font-bold text-neutral-900 leading-tight">{stat.label}</div>
+                    <div className="text-sm text-neutral-500">{stat.value}</div>
                   </div>
                 </div>
               ))}
@@ -71,11 +71,11 @@ export function About() {
             {/* Geometric/Image placeholder with motion */}
             <div className="relative aspect-square w-full max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-3xl rotate-3 scale-105" />
-              <div className="absolute inset-0 glass-card rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-                <div className="w-full h-full bg-neutral-900/50 flex items-center justify-center relative">
+              <div className="absolute inset-0 glass-card rounded-3xl overflow-hidden shadow-2xl border border-black/5">
+                <div className="w-full h-full bg-neutral-100/50 flex items-center justify-center relative">
                   {/* We abstract away a real image for now, and put abstract art */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-orange-500/30 rounded-full blur-[80px]" />
-                  <Code2 size={120} className="text-white/10" strokeWidth={1} />
+                  <Code2 size={120} className="text-black/5" strokeWidth={1} />
                 </div>
               </div>
 
@@ -83,21 +83,21 @@ export function About() {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                className="absolute -top-6 -right-6 px-4 py-3 glass-card rounded-2xl flex items-center gap-3 shadow-xl backdrop-blur-2xl border border-white/10"
+                className="absolute -top-6 -right-6 px-4 py-3 glass-card rounded-2xl flex items-center gap-3 shadow-xl backdrop-blur-2xl border border-black/5"
               >
                 <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-                <span className="font-medium text-sm">Open to Work</span>
+                <span className="font-medium text-sm text-neutral-900">Open to Work</span>
               </motion.div>
 
               <motion.div
                 animate={{ y: [0, 15, 0] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-                className="absolute -bottom-8 -left-8 px-4 py-3 glass-card rounded-2xl flex items-center gap-3 shadow-xl backdrop-blur-2xl border border-white/10"
+                className="absolute -bottom-8 -left-8 px-4 py-3 glass-card rounded-2xl flex items-center gap-3 shadow-xl backdrop-blur-2xl border border-black/5"
               >
                 <span className="text-2xl">🎓</span>
                 <div>
-                  <div className="font-bold text-sm">IT Graduated</div>
-                  <div className="text-xs text-secondary">MIS Major</div>
+                  <div className="font-bold text-sm text-neutral-900">IT Graduated</div>
+                  <div className="text-xs text-neutral-600">MIS Major</div>
                 </div>
               </motion.div>
             </div>

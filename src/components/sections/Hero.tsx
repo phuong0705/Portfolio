@@ -26,14 +26,14 @@ export function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Animated Background Mesh */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/20 rounded-full blur-[120px] mix-blend-screen" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] mix-blend-screen" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/20 rounded-full blur-[120px] mix-blend-multiply" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] mix-blend-multiply" />
         
         {/* Subtle grid pattern */}
         <div 
           className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
+            backgroundImage: "linear-gradient(to right, #000000 1px, transparent 1px), linear-gradient(to bottom, #000000 1px, transparent 1px)",
             backgroundSize: "40px 40px"
           }}
         />
@@ -47,7 +47,7 @@ export function Hero() {
           className="max-w-4xl"
         >
           <motion.div variants={itemVariants} className="inline-block mb-6">
-            <span className="bg-white/10 border border-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-medium text-orange-400">
+            <span className="bg-black/5 border border-black/10 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-medium text-orange-600">
               Available for Work
             </span>
           </motion.div>

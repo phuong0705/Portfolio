@@ -5,11 +5,10 @@ export const PORTFOLIO_DATA = {
   title: "Information Technology Graduate | Management Information Systems",
   targetRole: "Software Engineer / Full-stack Developer / Web Developer",
   shortIntro: "I am a recent Information Technology graduate with a specialization in Management Information Systems. I have hands-on experience building web and mobile applications through academic and personal projects. My main technical strengths include JavaScript, TypeScript, Node.js, Express.js, React, React Native, RESTful APIs, MongoDB, and SQL Server. I am looking for an opportunity to contribute to real-world products, continue learning, and grow as a software engineer.",
-  
+
   contact: {
     email: "thanhphuongtranit@gmail.com",
-    github: "https://github.com/your-username",
-    linkedin: "https://linkedin.com/in/your-username",
+    github: "https://github.com/phuong0705",
     phone: "0345585008",
   },
 
@@ -92,7 +91,7 @@ export const PORTFOLIO_DATA = {
       description: "Continuously applying learning into practice by building full-stack applications, exploring different architectures (MVC, Service Layer) and deploying projects."
     }
   ],
-  
+
   languages: [
     { language: "English", level: "TOEIC 500" },
     { language: "Vietnamese", level: "Native" }

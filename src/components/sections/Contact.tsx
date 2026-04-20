@@ -46,51 +46,51 @@ export function Contact() {
             className="col-span-1 lg:col-span-2 space-y-8 relative z-10"
           >
             <div>
-              <h3 className="text-2xl font-bold text-white mb-2">Get in touch</h3>
-              <p className="text-secondary">Fill out the form and I'll be in touch as soon as possible.</p>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-2">Get in touch</h3>
+              <p className="text-neutral-600">Fill out the form and I'll be in touch as soon as possible.</p>
             </div>
 
             <div className="space-y-6">
                <div className="flex items-center gap-4 group">
-                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-orange-400 group-hover:bg-orange-500/10 group-hover:border-orange-500/30 transition-colors">
+                 <div className="w-12 h-12 rounded-full bg-black/5 border border-black/5 flex items-center justify-center text-orange-500 group-hover:bg-orange-500/10 group-hover:border-orange-500/30 transition-colors">
                    <Mail size={20} />
                  </div>
                  <div>
-                   <div className="text-sm text-secondary">Email</div>
-                   <a href={`mailto:${PORTFOLIO_DATA.contact.email}`} className="text-white font-medium hover:text-orange-400 transition-colors">
+                   <div className="text-sm text-neutral-500">Email</div>
+                   <a href={`mailto:${PORTFOLIO_DATA.contact.email}`} className="text-neutral-900 font-medium hover:text-orange-500 transition-colors">
                      {PORTFOLIO_DATA.contact.email}
                    </a>
                  </div>
                </div>
 
                <div className="flex items-center gap-4 group">
-                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-orange-400 group-hover:bg-orange-500/10 group-hover:border-orange-500/30 transition-colors">
+                 <div className="w-12 h-12 rounded-full bg-black/5 border border-black/5 flex items-center justify-center text-orange-500 group-hover:bg-orange-500/10 group-hover:border-orange-500/30 transition-colors">
                    <Phone size={20} />
                  </div>
                  <div>
-                   <div className="text-sm text-secondary">Phone</div>
-                   <a href={`tel:${PORTFOLIO_DATA.contact.phone.replace(/\s+/g, '')}`} className="text-white font-medium hover:text-orange-400 transition-colors">
+                   <div className="text-sm text-neutral-500">Phone</div>
+                   <a href={`tel:${PORTFOLIO_DATA.contact.phone.replace(/\s+/g, '')}`} className="text-neutral-900 font-medium hover:text-orange-500 transition-colors">
                      {PORTFOLIO_DATA.contact.phone}
                    </a>
                  </div>
                </div>
 
                <div className="flex items-center gap-4 group">
-                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-orange-400 group-hover:bg-orange-500/10 group-hover:border-orange-500/30 transition-colors">
+                 <div className="w-12 h-12 rounded-full bg-black/5 border border-black/5 flex items-center justify-center text-orange-500 group-hover:bg-orange-500/10 group-hover:border-orange-500/30 transition-colors">
                    <MapPin size={20} />
                  </div>
                  <div>
-                   <div className="text-sm text-secondary">Location</div>
-                   <div className="text-white font-medium">Tp.Hồ Chí Minh</div>
+                   <div className="text-sm text-neutral-500">Location</div>
+                   <div className="text-neutral-900 font-medium">Tp.Hồ Chí Minh</div>
                  </div>
                </div>
             </div>
 
             <div className="pt-8 flex gap-4">
-               <a href={PORTFOLIO_DATA.contact.github} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-all hover:scale-110">
+               <a href={PORTFOLIO_DATA.contact.github} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center text-neutral-600 hover:text-neutral-900 hover:bg-black/10 transition-all hover:scale-110">
                  <Github size={20} />
                </a>
-               <a href={PORTFOLIO_DATA.contact.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/70 hover:text-white hover:bg-[#0A66C2] transition-all hover:scale-110">
+               <a href={PORTFOLIO_DATA.contact.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-black/5 flex items-center justify-center text-neutral-600 hover:text-white hover:bg-[#0A66C2] transition-all hover:scale-110">
                  <Linkedin size={20} />
                </a>
             </div>
@@ -107,45 +107,45 @@ export function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm text-secondary font-medium pl-1">Name</label>
+                  <label htmlFor="name" className="text-sm text-neutral-600 font-medium pl-1">Name</label>
                   <input 
                     type="text" 
                     id="name" 
                     required
-                    className="w-full bg-neutral-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
+                    className="w-full bg-black/5 border border-black/10 rounded-xl px-4 py-3 text-neutral-900 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                     placeholder="John Doe"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm text-secondary font-medium pl-1">Email</label>
+                  <label htmlFor="email" className="text-sm text-neutral-600 font-medium pl-1">Email</label>
                   <input 
                     type="email" 
                     id="email" 
                     required
-                    className="w-full bg-neutral-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
+                    className="w-full bg-black/5 border border-black/10 rounded-xl px-4 py-3 text-neutral-900 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                     placeholder="john@example.com"
                   />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm text-secondary font-medium pl-1">Subject</label>
+                <label htmlFor="subject" className="text-sm text-neutral-600 font-medium pl-1">Subject</label>
                 <input 
                   type="text" 
                   id="subject" 
                   required
-                  className="w-full bg-neutral-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
+                  className="w-full bg-black/5 border border-black/10 rounded-xl px-4 py-3 text-neutral-900 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                   placeholder="Job Opportunity"
                 />
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm text-secondary font-medium pl-1">Message</label>
+                <label htmlFor="message" className="text-sm text-neutral-600 font-medium pl-1">Message</label>
                 <textarea 
                   id="message" 
                   required
                   rows={5}
-                  className="w-full bg-neutral-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all resize-none"
+                  className="w-full bg-black/5 border border-black/10 rounded-xl px-4 py-3 text-neutral-900 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>

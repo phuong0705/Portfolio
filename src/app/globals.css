@@ -8,19 +8,19 @@
 
 @layer base {
   :root {
-    --background: #050505; /* Deep black background */
-    --foreground: #f0f0f0; /* White text */
+    --background: #f4f4f5; /* Light gray background (zinc-100) */
+    --foreground: #18181b; /* Dark text (zinc-900) */
     --accent: #f97316; /* Orange/Amber accent */
-    --accent-glow: rgba(249, 115, 22, 0.5);
-    --secondary: #a1a1aa; /* Soft gray */
-    --card: rgba(20, 20, 20, 0.6);
-    --card-border: rgba(255, 255, 255, 0.08);
+    --accent-glow: rgba(249, 115, 22, 0.3);
+    --secondary: #52525b; /* Medium gray (zinc-600) */
+    --card: rgba(255, 255, 255, 0.6);
+    --card-border: rgba(0, 0, 0, 0.08); /* Dark subtle border for light mode */
   }
 }
 
 @layer base {
   * {
-    @apply border-white/10;
+    @apply border-black/5;
   }
   body {
     @apply bg-[var(--background)] text-[var(--foreground)] font-sans antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white;
@@ -68,7 +68,7 @@
   background: var(--background);
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #d4d4d8;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {

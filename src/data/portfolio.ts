@@ -9,6 +9,7 @@ export const PORTFOLIO_DATA = {
   contact: {
     email: "thanhphuongtranit@gmail.com",
     github: "https://github.com/phuong0705",
+    linkedin: "https://www.linkedin.com/in/your-linkedin-id",
     phone: "0345585008",
   },
 

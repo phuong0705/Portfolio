@@ -1,6 +1,59 @@
 // portfolio.ts
 
-export const PORTFOLIO_DATA = {
+interface Contact {
+  email: string;
+  github: string;
+  linkedin: string;
+  phone: string;
+}
+
+interface Project {
+  id: string;
+  title: string;
+  role: string;
+  techStack: string[];
+  description: string;
+  keyFeatures: string[];
+  challengesSolved: string;
+  demoUrl: string;
+  githubUrl: string;
+  image: string;
+}
+
+interface Experience {
+  id: string;
+  title: string;
+  company: string;
+  duration: string;
+  description: string;
+}
+
+interface Language {
+  language: string;
+  level: string;
+}
+
+interface PortfolioData {
+  name: string;
+  title: string;
+  targetRole: string;
+  shortIntro: string;
+  contact: Contact;
+  skills: {
+    Languages: string[];
+    Frontend: string[];
+    Backend: string[];
+    Databases: string[];
+    Security: string[];
+    Tools: string[];
+    Architecture: string[];
+  };
+  projects: Project[];
+  experience: Experience[];
+  languages: Language[];
+}
+
+export const PORTFOLIO_DATA: PortfolioData = {
   name: "Trần Thanh Phương",
   title: "Information Technology Graduate | Management Information Systems",
   targetRole: "Software Engineer / Full-stack Developer / Web Developer",
